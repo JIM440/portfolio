@@ -43,3 +43,14 @@ all.forEach(dark =>{
 window.addEventListener('scroll', ()=>{
     navMenu.classList.remove('active')  
 })
+
+    // back to top
+    const backTop = document.getElementById('back-top')
+    window.addEventListener('scroll', () => {
+      if(document.documentElement.scrollTop > 200){
+backTop.classList.add('active')
+      }
+      else{
+        backTop.classList.remove('active')
+      }
+    })

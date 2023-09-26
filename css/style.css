@@ -40,6 +40,10 @@ body.dark {
   color: var(--color-black);
 }
 
+section {
+  margin-top: 1rem;
+}
+
 body {
   font-family: "Sofia Sans Semi Condensed", sans-serif;
 }
@@ -415,7 +419,7 @@ footer a.btn, footer a.btn-white {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 @media (min-width: 576px) {
   #contact .container .contact-details .contact-boxes {
@@ -429,7 +433,7 @@ footer a.btn, footer a.btn-white {
   align-items: center;
   border: 1px solid royalblue;
   border-radius: 10px;
-  padding: 10px;
+  padding: 16px 10px;
   width: 100%;
 }
 #contact .container .contact-details .contact-boxes .contact-box i {
