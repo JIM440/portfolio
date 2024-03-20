@@ -1,0 +1,75 @@
+#contact {
+  @include breakpointLaptop {
+    margin-top: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p,
+    span {
+      line-height: 1.8;
+    }
+
+    div {
+      width: 100%;
+    }
+    .contact-boxes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .contact-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid royalblue;
+        border-radius: 10px;
+        padding: 16px 10px;
+        width: 100%;
+        .header {
+          width: 100%;
+          font-size: 20px;
+        }
+        i {
+          color: var(--color-black);
+          font-size: 26px;
+        }
+        .link {
+          color: royalblue;
+          text-decoration: underline;
+          padding: 2px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .contact-form {
+      text-align: center;
+      input,
+      textarea {
+        width: 100%;
+        margin-top: 15px;
+        padding: 10px 12px;
+      }
+      textarea {
+        resize: none;
+      }
+
+      button {
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+      }
+    }
+
+    @include breakpointLaptop {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+//import abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/generals';
+
+//import base styles
+@import 'base/reset';
+
+//import components
+@import 'components/buttons';
+@import 'components/cards';
+
+// imporo utilities
+@import 'utilities/container';
+@import 'utilities/max-width';
+@import 'utilities/bg-blue';
+@import 'utilities/header';
+@import 'utilities/bold';
+@import 'utilities/underline';
+@import 'utilities/colors';
+
+//import layout
+@import 'layout/navbar';
+@import 'layout/footer';
+@import 'layout/contact';
+@import 'layout/carousels';
+
+//import pages
+@import 'pages/home';
+@import 'pages/notFound';

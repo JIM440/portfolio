@@ -1,0 +1,14 @@
+.icon-container,
+.icons-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+
+  a,
+  i {
+    color: $black;
+    font-size: 24px;
+  }
+}

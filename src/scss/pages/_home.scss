@@ -1,0 +1,322 @@
+// hero
+
+.hero {
+  .hero-columns {
+    max-width: 800px;
+    margin-inline: auto;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 2.5fr 3.5fr;
+    gap: 1.4rem;
+    padding-top: 16px;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 576px) {
+      & {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .hero-img {
+      background-color: #fafafc;
+      border-radius: 12px;
+      width: 100%;
+      min-height: 160px;
+      margin-inline: auto;
+      //
+      img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 170px;
+        border-radius: 12px;
+      }
+      @include breakpointDynamic(450px) {
+        & {
+          height: auto;
+          img {
+            max-height: 250px;
+          }
+        }
+      }
+    }
+    .hero-text {
+      font-size: 18px;
+    }
+  }
+}
+
+// about us
+.about {
+  margin-top: 30px;
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+// skills
+.skills {
+  .skills-container {
+    display: grid;
+    gap: 1rem;
+
+    .skill-box {
+      border: 1px solid royalblue;
+      padding: 10px;
+      border-radius: 10px;
+
+      h2 {
+        font-size: 22px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+    .skill-box .skill-box-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      justify-content: center;
+    }
+    .skill-box .skill-box-content .header,
+    .skill-box .skill-box-content .sub-header {
+      font-size: 18px;
+    }
+    .skill-box .skill-box-content h3.header,
+    .skill-box .skill-box-content h3.sub-header {
+      text-align: left;
+      margin-left: 18px;
+    }
+    .skill-box .skill-box-content ul,
+    .skill-box .skill-box-content li {
+      font-size: 14px;
+      margin-top: 6px;
+      list-style: disc;
+    }
+    @media (min-width: 576px) {
+      .skill-box .skill-box-content ul,
+      .skill-box .skill-box-content li {
+        font-size: 16px;
+      }
+    }
+    .skill-box .skill-box-content ul {
+      margin-left: 28px;
+    }
+    @media (min-width: 768px) {
+      .skill-box .skill-box-content ul {
+        margin-left: 2.2rem;
+      }
+    }
+    @media (min-width: 576px) {
+      & {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 1rem 1.7rem;
+      }
+    }
+    @media (min-width: 768px) {
+      & {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+// services
+.services {
+  text-align: center;
+  padding-bottom: 20px;
+
+  .link {
+    justify-content: center;
+  }
+}
+.projects {
+  .project-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 2.5rem;
+
+    @include breakpointDynamic(1100px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+      align-items: center;
+      max-width: 650px;
+      margin-inline: auto;
+      .header {
+        font-size: 24px;
+      }
+      img {
+        width: 100%;
+        border-radius: 1rem;
+        min-height: 300px;
+        background-color: #fcfcfc;
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        a:first-of-type {
+          background-color: white;
+          color: Black;
+          border: 1px solid $text-muted;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+// testimonial
+.testimonials {
+  .testimonial-container {
+    padding-top: 1rem;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .testimonial-box {
+      min-width: 180px;
+      max-width: 230px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
+      background-color: $bg-grey;
+      border-radius: 8px;
+      padding: 16px 10px;
+
+      p {
+        font-size: 14px;
+      }
+
+      .level {
+        font-size: 14px;
+        span {
+          font-style: italic;
+        }
+
+        &::after,
+        &::before {
+          content: '"';
+          font-size: 14px;
+          font-weight: bold;
+          font-style: italic;
+        }
+      }
+
+      img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 100%;
+        background-color: $text-muted;
+      }
+    }
+  }
+}
+
+// recent activities
+
+// support us
+.support-us {
+  text-align: center;
+  max-width: 510px;
+  margin: auto;
+
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+// faqs section
+.faqs {
+  max-width: 768px;
+  margin-inline: auto;
+
+  .faqs-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .faq {
+      cursor: pointer;
+      width: 100%;
+      border: 1px solid #b3b3b3;
+      padding: 10px;
+      cursor: pointer;
+
+      .question {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: start;
+
+        i {
+          font-size: 18px;
+          color: $text-muted;
+        }
+      }
+      .answer {
+        margin-top: 10px;
+        color: $text-muted;
+        display: none;
+
+        font-size: 14px;
+      }
+      .question.active i {
+        transform: rotate(180deg);
+      }
+      .answer.active {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// partners
+.partners {
+  background-color: $blue;
+  color: $black;
+  padding: 10px;
+  padding-block: 1rem;
+
+  .header,
+  .header-description {
+    color: $white;
+  }
+  .partner-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+
+    img {
+      width: 30px;
+      height: 30px;
+      max-width: 120px;
+      border-radius: 8px;
+      width: 70px;
+      height: 70px;
+    }
+    @include breakpointTablet {
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+}

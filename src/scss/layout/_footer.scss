@@ -1,0 +1,128 @@
+#footer {
+  background-color: darken($bg-light, 30%);
+
+  .container {
+    .footer-grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      justify-content: space-between;
+      padding-block: 1rem;
+
+      p,
+      span {
+        line-height: 1.8;
+      }
+
+      @include breakpointDynamic(570px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+      @include breakpointDynamic(740px) {
+        grid-template-columns: 2fr 1fr 1fr;
+      }
+      @include breakpointDynamic(1040px) {
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+      }
+
+      .logo {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
+        h2 {
+          color: $black;
+        }
+      }
+      .footer-grid-box {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        li {
+          margin-bottom: 10px;
+        }
+
+        & > p {
+          text-decoration: underline;
+          font-weight: 600;
+        }
+
+        .form-group {
+          display: flex;
+          gap: 0px;
+          height: fit-content;
+          max-width: 300px;
+          margin-top: 10px;
+        }
+        .form-group input {
+          padding: 6px;
+          border-radius: 0px;
+          border-top-left-radius: 6px;
+          color: $black;
+          border-bottom-left-radius: 6px;
+          font-size: 14px;
+        }
+        .form-group button {
+          padding: 6px;
+          border-radius: 0px;
+          border-top-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+          font-size: 14px;
+          margin: 0;
+        }
+        .social-links {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          width: fit-content;
+        }
+        .social-links i {
+          font-size: 24px;
+        }
+        .social-links i:hover {
+          transition: 0s;
+        }
+
+        a {
+          color: $black;
+
+          &:hover {
+            color: darken($primary-color, 40%);
+          }
+          transition: 0.4s ease;
+        }
+      }
+      .contact {
+        li {
+          display: flex;
+          gap: 1.5rem;
+          align-items: start;
+          margin-block: 6px;
+
+          i {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .copy-right {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      max-width: 800px;
+      padding-top: 1rem;
+
+      i {
+        font-size: 18px;
+      }
+    }
+
+    hr {
+      background-color: $black;
+    }
+  }
+}
