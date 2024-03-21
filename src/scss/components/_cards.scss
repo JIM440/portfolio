@@ -4,12 +4,17 @@
   align-items: center;
   gap: 2rem;
 
-  img {
-    width: 100%;
-    max-width: none;
+  .image {
     border-radius: 8px;
-    background-color: $text-muted;
     min-height: 270px;
+    background-color: #fafafc;
+
+    img {
+      border-radius: 8px;
+      width: 100%;
+      max-width: none;
+      background-color: #fafafc;
+    }
   }
 
   .text {
@@ -42,7 +47,7 @@
   }
 
   .service-box {
-    box-shadow: 0px 4px 10px (rgba($black, 0.3));
+    box-shadow: 0px 4px 4px (rgba($black, 0.28));
     border-radius: 6px;
     margin-top: 10px;
     border-bottom: 6px solid $blue;

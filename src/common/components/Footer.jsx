@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // images
-import logo from '../../assets/img/logo.png';
+import logo from '../../assets/img/logo.jpg';
 const Footer = () => {
   return (
     <footer id="footer">
       <div className="container">
         <div className="footer-grid-container">
           <div className="footer-grid-box">
-            <Link to="/" aria-label="link to home page" className="logo">
-              <img src={logo} alt="logo" />
+            <a href="#home" aria-label="link to home section" className="logo">
+              <img src={logo} alt="logo" width="40px" />
               <h2>JIM</h2>
-            </Link>
+            </a>
             <form action="" className="flex-col">
               <h3>Subscribe To My Newsletter</h3>
               <div className="form-group">
@@ -35,11 +35,31 @@ const Footer = () => {
               <b>Follow Us:</b>
             </span>
             <div className="social-links">
-              <a href="">
+              <a
+                href="/https://www.linkedin.com/in/takem-jim-7b7319227/"
+                aria-label="link to linkedin profile"
+              >
                 <i class="bx bxl-linkedin-square"></i>
               </a>
-              <a href="">
+              <a
+                href="/https://github.com/jim440"
+                aria-label="link to github profile"
+              >
                 <i className="bx bxl-github"></i>
+              </a>
+              <a
+                href="/https://wa.me/237654812052"
+                target="_bl ank"
+                rel="noreferrer"
+              >
+                <i className="bx bxl-whatsapp-square"></i>
+              </a>
+              <a
+                href="/https://studio.youtube.com/channel/UCUwvq0ka_bfT8kMxQO-XhdA/videos"
+                target="_bl ank"
+                rel="noreferrer"
+              >
+                <i className="bx bxl-youtube"></i>
               </a>
             </div>
           </div>
@@ -48,25 +68,39 @@ const Footer = () => {
             <p>Quick Links</p>
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="#home" aria-label="link home section">
+                  Home
+                </a>
               </li>
               <li>
-                <a href="">About</a>
+                <a href="#about" aria-label="link about section">
+                  About
+                </a>
               </li>
               <li>
-                <a href="">Skills</a>
+                <a href="#skills" aria-label="link skills section">
+                  Skills
+                </a>
               </li>
               <li>
-                <a href="">Services</a>
+                <a href="#services" aria-label="link services section">
+                  Services
+                </a>
               </li>
               <li>
-                <a href="">Projects</a>
+                <a href="#projects" aria-label="link projects section">
+                  Projects
+                </a>
               </li>
               <li>
-                <a href="">Testimonials</a>
+                <a href="#testimonials" aria-label="link testimonials section">
+                  Testimonials
+                </a>
               </li>
               <li>
-                <a href="">Contact</a>
+                <a href="#contact" aria-label="link contact section">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -75,18 +109,12 @@ const Footer = () => {
             <p>Helpers</p>
             <ul>
               <li>
-                <Link
-                  to="concours/engineering"
-                  aria-label="link to asend engineering concour page"
-                >
+                <Link to="/roadmap" aria-label="link to developer roadmap">
                   Roadmap
                 </Link>
               </li>
               <li>
-                <Link
-                  to="concours/medicine"
-                  aria-label="link to asend medicine concour page"
-                >
+                <Link to="/resume" aria-label="download resume and cv">
                   Resume | CV
                 </Link>
               </li>
@@ -97,7 +125,7 @@ const Footer = () => {
             <ul>
               <li>
                 <i className="bx bxs-phone"></i>
-                <p>(+237) 654812052</p>
+                <p>+(237) 654812052</p>
               </li>
               <li>
                 <i className="bx bx-current-location"></i>

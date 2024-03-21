@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Link, a } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // images
-import logo from '../../assets/img/logo.png';
+import logo from '../../assets/img/logo.jpg';
 
 const Navbar = () => {
   // states
@@ -101,17 +101,17 @@ const Navbar = () => {
               </li>
               {/* Concours */}
               <li className="first-link">
-                <a href="#contact" aria-label="link to contact">
+                <a href="#contact" aria-label="link to contact form">
                   <p>Contact</p>
                 </a>
               </li>
             </div>
             <div>
               <li>
-                <a href="">Resume | CV</a>
+                <a href="resume">Resume | CV</a>
               </li>
               <li>
-                <a href="">Roadmap</a>
+                <a href="/roadmap">Roadmap</a>
               </li>
             </div>
           </ul>
@@ -142,34 +142,26 @@ const Navbar = () => {
         <ul className="links-container">
           <ul className="links">
             <li>
-              <a
-                href="#home"
-                aria-label="link to home page"
-                onClick={toggleAll}
-              >
+              <a href="#home" aria-label="link to home" onClick={toggleAll}>
                 <i className="bx bxs-home"></i>
                 <span>Home</span>
               </a>
             </li>
             <li>
-              <a
-                href="#about"
-                aria-label="link to about page"
-                onClick={toggleAll}
-              >
+              <a href="#about" aria-label="link to about" onClick={toggleAll}>
                 <i className="bx bxs-user"></i> <span>About Me</span>
               </a>
             </li>
             <li>
               <a
                 href="#skills"
-                aria-label="link to services page"
+                aria-label="link to services"
                 onClick={toggleAll}
               >
                 <i
                   className="bx bx-code-alt"
                   style={{
-                    fontWeight: '700',
+                    fontWeight: '800',
                   }}
                 ></i>
                 <span>Skills</span>
@@ -178,7 +170,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#services"
-                aria-label="link to services page"
+                aria-label="link to services"
                 onClick={toggleAll}
               >
                 <i className="bx bxs-cog"></i>
@@ -188,7 +180,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#projects"
-                aria-label="link to concours page"
+                aria-label="link to projects"
                 onClick={toggleAll}
               >
                 <i className="bx bxs-book"></i>
@@ -198,7 +190,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#testimonials"
-                aria-label="link to concours page"
+                aria-label="link to testimonials"
                 onClick={toggleAll}
               >
                 <i className="bx bxs-star"></i>
@@ -211,27 +203,27 @@ const Navbar = () => {
             <div className="social-links">
               <a
                 href="https://www.linkedin.com/in/takem-jim-7b7319227/"
-                target="_bl ank"
+                target="_blank"
                 rel="noreferrer"
               >
                 <i className="bx bxl-linkedin-square"></i>
               </a>
               <a
-                href="https://studio.youtube.com/channel/UCUwvq0ka_bfT8kMxQO-XhdA/videos"
+                href="/https://studio.youtube.com/channel/UCUwvq0ka_bfT8kMxQO-XhdA/videos"
                 target="_bl ank"
                 rel="noreferrer"
               >
                 <i className="bx bxl-youtube"></i>
               </a>
               <a
-                href="https://github.com/JIM440"
+                href="/https://github.com/JIM440"
                 target="_bl ank"
                 rel="noreferrer"
               >
                 <i className="bx bxl-github"></i>
               </a>
               <a
-                href="https://wa.me/237654812052"
+                href="/https://wa.me/237654812052"
                 target="_bl ank"
                 rel="noreferrer"
               >

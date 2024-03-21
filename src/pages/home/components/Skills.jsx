@@ -14,7 +14,8 @@ const Skills = () => {
                 <h3 class="header">Frontend</h3>
                 <ul>
                   <li>HTML | CSS</li>
-                  <li>Tailwind | Bootstrap | SASS</li>
+                  <li>Tailwind | Bootstrap</li>
+                  <li>SASS | SCSS</li>
                   <li>JavaScript</li>
                   <li>React</li>
                   <li>Web Design</li>
@@ -24,8 +25,8 @@ const Skills = () => {
                 <h3 class="header">Backend</h3>
                 <ul>
                   <li> NodeJS (Express)</li>
-                  <li>SQL Databasess</li>
-                  <li>NoSQL Databases</li>
+                  <li>SQL Databasess (MySQL | SQL Server)</li>
+                  <li>NoSQL Databases (MongoDB | Firebase)</li>
                 </ul>
               </div>
             </div>

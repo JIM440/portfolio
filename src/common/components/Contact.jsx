@@ -14,6 +14,7 @@ const Contact = () => {
               <a
                 href="mailto:takemjim43@gmail.com"
                 target="_blank"
+                rel="noreferrer"
                 class="link"
               >
                 Send a message
@@ -26,6 +27,7 @@ const Contact = () => {
               <a
                 href="https://www.messenger.com/t/takemjim"
                 class="link"
+                rel="noreferrer"
                 target="_blank"
               >
                 Send a message
@@ -35,7 +37,12 @@ const Contact = () => {
               <i class="bx bxl-whatsapp"></i>
               <h2 class="header">Whatsapp</h2>
               <p>654812052</p>
-              <a href="https://wa.me/237654812052" target="_blank" class="link">
+              <a
+                href="https://wa.me/237654812052"
+                rel="noreferrer"
+                target="_blank"
+                class="link"
+              >
                 Send a message
               </a>
             </div>

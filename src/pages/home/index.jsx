@@ -9,9 +9,12 @@ const Home = () => {
   const scrollToTop = UseScrollTop();
   return (
     <>
-      <section className="hero hero-home" id="home">
+      <section
+        className="hero hero-home"
+        id="home"
+        style={{ marginTop: '0px' }}
+      >
         <div className="container">
-          <h1 className="header">Welcome!!! 👋</h1>
           <div className="hero-columns">
             <div className="hero-img">
               <img
@@ -20,10 +23,16 @@ const Home = () => {
               />
             </div>
             <div className="hero-text">
-              Welcome to my world of <span className="blue">technology</span>{' '}
-              and <span className="red">data</span>! I'm thrilled to have you
-              here as we dive into the captivating world where technology meets
-              data.
+              <h1 className="header" style={{ textAlign: 'left' }}>
+                Welcome!!! 👋
+              </h1>
+
+              <p>
+                Welcome to my world of <span className="blue">technology</span>{' '}
+                and <span className="red">data</span>! I'm thrilled to have you
+                here as we dive into the captivating world where technology
+                meets data.
+              </p>
             </div>
           </div>
         </div>

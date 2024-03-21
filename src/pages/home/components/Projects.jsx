@@ -5,14 +5,12 @@ const project = () => {
     <section className="projects" id="projects">
       <div className="container">
         <h2 className="header">My projects 👨‍💻</h2>
-        <p className="header-description">
-          Check out some of my project and work
-        </p>
+        <p className="header-description">Check out some of my projects</p>
         <div className="project-container">
           <div className="project">
             <img
               src="https://phintraco.com/wp-content/uploads/2021/09/Data-warehouse-and-database-the-difference.jpeg"
-              alt=""
+              alt="data warehouse project"
             />
             <div>
               <p className="header">E-Commerce Website</p>
@@ -24,16 +22,20 @@ const project = () => {
             </div>
             <div className="buttons">
               <a
+                aria-label=""
                 href="https://github.com/JIM440/e-commerce-website-devlab"
                 target="_blank"
+                rel="noreferrer"
                 className="btn"
               >
                 <span>Github</span>
                 <i className="bx bxl-github"></i>
               </a>
               <a
+                aria-label=""
                 href="https://jim440.github.io/e-commerce-website-devlab/index.html"
                 target="_blank"
+                rel="noreferrer"
                 className="btn "
               >
                 <span>Live Demo</span> <i className="bx bx-link-external"></i>
@@ -52,17 +54,21 @@ const project = () => {
             </div>
             <div className="buttons">
               <a
+                aria-label=""
                 href="https://github.com/JIM440/ASEND-Website"
                 className="btn"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span>Github</span>
                 <i className="bx bxl-github"></i>
               </a>
               <a
+                aria-label=""
                 href="https://jim440.github.io/ASEND-Website/"
                 className="btn "
                 target="_blank"
+                rel="noreferrer"
               >
                 <span>Live Demo</span> <i className="bx bx-link-external"></i>
               </a>
@@ -80,17 +86,21 @@ const project = () => {
             </div>
             <div className="buttons">
               <a
+                aria-label=""
                 href="https://github.com/JIM440/Build-CSS-library-with-SASS"
                 className="btn"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span>Github</span>
                 <i className="bx bxl-github"></i>
               </a>
               <a
+                aria-label=""
                 href="https://jim440.github.io/Build-CSS-library-with-SASS/"
                 className="btn "
                 target="_blank"
+                rel="noreferrer"
               >
                 <span>Live Demo</span> <i className="bx bx-link-external"></i>
               </a>
@@ -108,17 +118,21 @@ const project = () => {
             </div>
             <div className="buttons">
               <a
+                aria-label=""
                 href="https://github.com/JIM440/MultiPage-School-Website"
                 className="btn"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span>Github</span>
                 <i className="bx bxl-github"></i>
               </a>
               <a
+                aria-label=""
                 href="https://jim440.github.io/MultiPage-School-Website/"
                 className="btn "
                 target="_blank"
+                rel="noreferrer"
               >
                 <span>Live Demo</span> <i className="bx bx-link-external"></i>
               </a>
