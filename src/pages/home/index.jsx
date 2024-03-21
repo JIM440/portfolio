@@ -4,6 +4,7 @@ import Services from './components/Services';
 import AboutUs from './components/AboutUs';
 import UseScrollTop from '../../common/components/UseScrollTop';
 import Projects from './components/Projects';
+import jim from '../../assets/img/jim.jpg';
 
 const Home = () => {
   const scrollToTop = UseScrollTop();
@@ -17,10 +18,7 @@ const Home = () => {
         <div className="container">
           <div className="hero-columns">
             <div className="hero-img">
-              <img
-                src="https://asend-website.vercel.app/static/media/santina.e5258ee774f594e31b9a.jpg"
-                alt=""
-              />
+              <img src="" alt="" />
             </div>
             <div className="hero-text">
               <h1 className="header" style={{ textAlign: 'left' }}>

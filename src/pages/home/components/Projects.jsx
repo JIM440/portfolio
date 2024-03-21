@@ -1,143 +1,86 @@
 import React from 'react';
+import warehouse from '../../../assets/img/warehouse.jpg';
+import agm from '../../../assets/img/agm.jpg';
+import asend from '../../../assets/img/asend1.jpg';
+import css_library from '../../../assets/img/css_library.jpg';
 
 const project = () => {
+  const projects = [
+    {
+      image: warehouse,
+      header: 'Three Tier Application and Data Warehouse',
+      description:
+        'A data warehouse used to analyze data from a chat application.',
+      technologies: ['HTML | CSS | Chart JS | Node.js | Express | MongoDB'],
+      githubUrl: 'https://github.com/JIM440/Data-Analysis-Projects',
+      liveDemoUrl: 'https://github.com/JIM440/Data-Analysis-Projects',
+    },
+    {
+      image: asend,
+      header: 'ASEND WEBSITE',
+      description:
+        'A multipag website for a prep group that prepares students for professional exams.',
+      technologies: 'React | SASS',
+      githubUrl: 'https://github.com/JIM440/ASEND-Website',
+      liveDemoUrl: 'https://asend-website.vercel.app/',
+    },
+    {
+      image: agm,
+      header: 'AGM WEBSITE',
+      description:
+        'A multipage website for the Apostolic Gospel Mission Kumba.',
+      technologies: 'React | SASS',
+      githubUrl: 'https://github.com/JIM440/AGM-Website',
+      liveDemoUrl: 'https://agm-website-react.vercel.app/',
+    },
+    {
+      image: css_library,
+      header: 'CSS LIBRARY',
+      description:
+        'This is a light weight CSS library, similar to tailwind CSS, where users can design websites using utility classes.',
+      technologies: 'HTML | JS | SASS',
+      githubUrl: 'https://github.com/JIM440/CSS-Library-with-SASS',
+      liveDemoUrl: 'https://jim440.github.io/CSS-Library-with-SASS/s',
+    },
+  ];
+
   return (
     <section className="projects" id="projects">
       <div className="container">
         <h2 className="header">My projects 👨‍💻</h2>
         <p className="header-description">Check out some of my projects</p>
         <div className="project-container">
-          <div className="project">
-            <img
-              src="https://phintraco.com/wp-content/uploads/2021/09/Data-warehouse-and-database-the-difference.jpeg"
-              alt="data warehouse project"
-            />
-            <div>
-              <p className="header">E-Commerce Website</p>
-              <p className="description">
-                An e-commerce website, where users can view and purchase
-                products from a range of products. With a cart to save various
-                products. <p className="bold">HTML | CSS | Javascript</p>
-              </p>
+          {projects.map((project, index) => (
+            <div className="project" key={index}>
+              <img src={project.image} alt="" />
+              <div>
+                <p className="header">{project.header}</p>
+                <p className="description">{project.description}</p>
+                <p className="bold">{project.technologies}</p>
+              </div>
+              <div className="buttons">
+                <a
+                  aria-label=""
+                  href={`../${project.githubUrl}`}
+                  className="btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>Github</span>
+                  <i className="bx bxl-github"></i>
+                </a>
+                <a
+                  aria-label=""
+                  href={`../${project.liveDemoUrl}`}
+                  className="btn "
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>Live Demo</span> <i className="bx bx-link-external"></i>
+                </a>
+              </div>
             </div>
-            <div className="buttons">
-              <a
-                aria-label=""
-                href="https://github.com/JIM440/e-commerce-website-devlab"
-                target="_blank"
-                rel="noreferrer"
-                className="btn"
-              >
-                <span>Github</span>
-                <i className="bx bxl-github"></i>
-              </a>
-              <a
-                aria-label=""
-                href="https://jim440.github.io/e-commerce-website-devlab/index.html"
-                target="_blank"
-                rel="noreferrer"
-                className="btn "
-              >
-                <span>Live Demo</span> <i className="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div>
-          <div className="project">
-            <img src="img/asend.jpg" alt="" />
-            <div>
-              <p className="header">ASEND Website</p>
-              <p className="description">
-                A multipag website for a prep group that prepares students for
-                professional exams.{' '}
-                <p className="bold">HTML | SASS | JavaScript</p>
-              </p>
-            </div>
-            <div className="buttons">
-              <a
-                aria-label=""
-                href="https://github.com/JIM440/ASEND-Website"
-                className="btn"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>Github</span>
-                <i className="bx bxl-github"></i>
-              </a>
-              <a
-                aria-label=""
-                href="https://jim440.github.io/ASEND-Website/"
-                className="btn "
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>Live Demo</span> <i className="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div>
-          <div className="project">
-            <img src="img/sass library.jpg" alt="" />
-            <div>
-              <p className="header">Light-weight CSS Library</p>
-              <p className="description">
-                This is a light weight CSS library, similar to tailwind CSS,
-                where users can design websites using utility classes.
-                <p className="bold">HTML | CSS | Javascript</p>
-              </p>
-            </div>
-            <div className="buttons">
-              <a
-                aria-label=""
-                href="https://github.com/JIM440/Build-CSS-library-with-SASS"
-                className="btn"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>Github</span>
-                <i className="bx bxl-github"></i>
-              </a>
-              <a
-                aria-label=""
-                href="https://jim440.github.io/Build-CSS-library-with-SASS/"
-                className="btn "
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>Live Demo</span> <i className="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div>
-          <div className="project">
-            <img src="img/school.jpg" alt="" />
-            <div className="text">
-              <p className="header">Multipage School Website</p>
-              <p className="description">
-                A multipage website for a school displaying the schools info,
-                staffs and courses they offer.{' '}
-                <p className="bold">HTML | CSS | Javascript</p>
-              </p>
-            </div>
-            <div className="buttons">
-              <a
-                aria-label=""
-                href="https://github.com/JIM440/MultiPage-School-Website"
-                className="btn"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>Github</span>
-                <i className="bx bxl-github"></i>
-              </a>
-              <a
-                aria-label=""
-                href="https://jim440.github.io/MultiPage-School-Website/"
-                className="btn "
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>Live Demo</span> <i className="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

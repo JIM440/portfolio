@@ -238,7 +238,7 @@ const Navbar = () => {
               onClick={toggleAll}
               aria-label="link to contact form"
             >
-              Contact Us
+              Contact Me
             </a>
           </li>
         </ul>

@@ -51,7 +51,7 @@ const Contact = () => {
 
         <div className="contact-form">
           <h2>OR</h2>
-          <p className="bold">Leave us a message</p>
+          <p className="bold">Leave a message</p>
           <form action="https://formspree.io/f/xvojwyga" method="post">
             <input type="text" name="Name" placeholder="Name" required />
             <input type="text" name="email" placeholder="email" required />
