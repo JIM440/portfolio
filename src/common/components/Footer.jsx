@@ -16,7 +16,11 @@ const Footer = () => {
               <img src={logo} alt="logo" width="40px" />
               <h2>JIM</h2>
             </a>
-            <form action="" className="flex-col">
+            <form
+              action="https://formspree.io/f/xeqylnjb"
+              method="POST"
+              className="flex-col"
+            >
               <h3>Subscribe To My Newsletter</h3>
               <div className="form-group">
                 <input
