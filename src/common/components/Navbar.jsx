@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // images
-import logo from '../../assets/img/logo.jpg';
+import logo from '../../assets/img/logo.png';
 
 const Navbar = () => {
   // states
@@ -56,7 +56,7 @@ const Navbar = () => {
             className="logo"
             onClick={toggleAll}
           >
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" width="40px" />
             <h2>JIM</h2>
           </a>
 

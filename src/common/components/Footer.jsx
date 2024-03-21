@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // images
-import logo from '../../assets/img/logo.jpg';
+import logo from '../../assets/img/logo.png';
 const Footer = () => {
   return (
     <footer id="footer">
