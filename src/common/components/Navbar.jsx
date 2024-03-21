@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import resume from '../../assets/cv.pdf';
+import roadmap from '../../assets/FULL STACK WEB DEVELOPER ROADMAP.pdf';
 // images
 import logo from '../../assets/img/logo.png';
+import OpenPdfInNewTab from '../functions/DownloadDoc';
 
 const Navbar = () => {
   // states
@@ -108,10 +111,18 @@ const Navbar = () => {
             </div>
             <div>
               <li>
-                <a href="resume">Resume | CV</a>
+                <OpenPdfInNewTab
+                  pdfFile={resume}
+                  name="Resume"
+                  className={``}
+                />
               </li>
               <li>
-                <a href="/roadmap">Roadmap</a>
+                <OpenPdfInNewTab
+                  pdfFile={roadmap}
+                  name="Roadmap"
+                  className={``}
+                />
               </li>
             </div>
           </ul>
@@ -209,25 +220,25 @@ const Navbar = () => {
                 <i className="bx bxl-linkedin-square"></i>
               </a>
               <a
-                href="/https://studio.youtube.com/channel/UCUwvq0ka_bfT8kMxQO-XhdA/videos"
-                target="_bl ank"
-                rel="noreferrer"
-              >
-                <i className="bx bxl-youtube"></i>
-              </a>
-              <a
-                href="/https://github.com/JIM440"
-                target="_bl ank"
+                href="https://github.com/JIM440"
+                target="_blank"
                 rel="noreferrer"
               >
                 <i className="bx bxl-github"></i>
               </a>
               <a
-                href="/https://wa.me/237654812052"
-                target="_bl ank"
+                href="https://twitter.com/TakemJim"
+                target="_blank"
                 rel="noreferrer"
               >
-                <i className="bx bxl-whatsapp-square"></i>
+                <i className="bx bxl-twitter"></i>
+              </a>{' '}
+              <a
+                href="https://studio.youtube.com/channel/UCUwvq0ka_bfT8kMxQO-XhdA/videos"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="bx bxl-youtube"></i>
               </a>
             </div>
           </li>

@@ -30,13 +30,9 @@ const AboutUs = () => {
             >
               Get Started
             </a>
-            <a
-              href="resume"
-              className="btn btn-white"
-              aria-label="link to resume"
-            >
+            <button className="btn btn-white" aria-label="download resume">
               Download Resume
-            </a>
+            </button>
           </div>
         </div>
         <div className="image">

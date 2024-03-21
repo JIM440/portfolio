@@ -61,7 +61,7 @@ const project = () => {
               <div className="buttons">
                 <a
                   aria-label=""
-                  href={`../${project.githubUrl}`}
+                  href={`${project.githubUrl}`}
                   className="btn"
                   target="_blank"
                   rel="noreferrer"
@@ -71,7 +71,7 @@ const project = () => {
                 </a>
                 <a
                   aria-label=""
-                  href={`../${project.liveDemoUrl}`}
+                  href={`${project.liveDemoUrl}`}
                   className="btn "
                   target="_blank"
                   rel="noreferrer"

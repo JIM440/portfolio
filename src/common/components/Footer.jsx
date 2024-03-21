@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import resume from '../../assets/cv.pdf';
+import roadmap from '../../assets/FULL STACK WEB DEVELOPER ROADMAP.pdf';
+
 // images
 import logo from '../../assets/img/logo.png';
+import OpenPdfInNewTab from '../functions/DownloadDoc';
 const Footer = () => {
   return (
     <footer id="footer">
@@ -36,27 +40,27 @@ const Footer = () => {
             </span>
             <div className="social-links">
               <a
-                href="/https://www.linkedin.com/in/takem-jim-7b7319227/"
+                href="https://www.linkedin.com/in/takem-jim-7b7319227/"
                 aria-label="link to linkedin profile"
               >
                 <i class="bx bxl-linkedin-square"></i>
               </a>
               <a
-                href="/https://github.com/jim440"
+                href="https://github.com/jim440"
                 aria-label="link to github profile"
               >
                 <i className="bx bxl-github"></i>
               </a>
               <a
-                href="/https://wa.me/237654812052"
-                target="_bl ank"
+                href="https://twitter.com/TakemJim"
+                target="_blank"
                 rel="noreferrer"
               >
-                <i className="bx bxl-whatsapp-square"></i>
+                <i className="bx bxl-twitter"></i>
               </a>
               <a
-                href="/https://studio.youtube.com/channel/UCUwvq0ka_bfT8kMxQO-XhdA/videos"
-                target="_bl ank"
+                href="https://studio.youtube.com/channel/UCUwvq0ka_bfT8kMxQO-XhdA/videos"
+                target="_blank"
                 rel="noreferrer"
               >
                 <i className="bx bxl-youtube"></i>
@@ -109,14 +113,24 @@ const Footer = () => {
             <p>Helpers</p>
             <ul>
               <li>
-                <Link to="/roadmap" aria-label="link to developer roadmap">
+                <OpenPdfInNewTab
+                  pdfFile={roadmap}
+                  name="Roadmap"
+                  className={``}
+                />
+                {/* <button
+                  aria-label="download roadmap"
+                  onClick={handleDownload(resume)}
+                >
                   Roadmap
-                </Link>
+                </button> */}
               </li>
               <li>
-                <Link to="/resume" aria-label="download resume and cv">
-                  Resume | CV
-                </Link>
+                <OpenPdfInNewTab
+                  pdfFile={resume}
+                  name="Resume"
+                  className={``}
+                />
               </li>
             </ul>
           </div>
