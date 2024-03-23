@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import OpenPdfInNewTab from '../../../common/functions/DownloadDoc';
 import roadmap from '../../../assets/FULL STACK WEB DEVELOPER ROADMAP.pdf';
+import resume from '../../../assets/cv.pdf';
 
 const AboutUs = () => {
   return (
@@ -37,9 +38,11 @@ const AboutUs = () => {
             >
               Get Started
             </a>
-            <button className="btn btn-white" aria-label="download resume">
-              Download Resume
-            </button>
+            <OpenPdfInNewTab
+              pdfFile={resume}
+              name="Download Resume"
+              className="btn btn-white"
+            />
           </div>
         </div>
         <div className="image">
