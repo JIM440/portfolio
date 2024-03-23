@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import OpenPdfInNewTab from '../../../common/functions/DownloadDoc';
+import roadmap from '../../../assets/FULL STACK WEB DEVELOPER ROADMAP.pdf';
 
 const AboutUs = () => {
   return (
@@ -14,9 +16,14 @@ const AboutUs = () => {
             knowledge in the dynamic field of technology. <br />
             For those who are eager to embark on their own tech journey, I've
             prepared a comprehensive developer &nbsp;
-            <Link aria-label="link to developer roadmap page" to="/roadmap">
+            {/* <button aria-label="downlo to developer roadmap page" to="/roadmap">
               <span className="blue underline">roadmap</span>
-            </Link>
+            </button> */}
+            <OpenPdfInNewTab
+              pdfFile={roadmap}
+              name="roadmap"
+              className="blue underline"
+            />
             &nbsp; to guide you through. <br />
             So, whether you're an aspiring developer or someone looking for
             innovative solutions, let's embark on this exciting tech journey
