@@ -18,7 +18,10 @@ const Home = () => {
         <div className="container">
           <div className="hero-columns">
             <div className="hero-img">
-              <img src="" alt="" />
+              <img
+                src="https://blog.photofeeler.com/wp-content/uploads/2017/12/linkedin-profile-picture.jpg"
+                alt=""
+              />
             </div>
             <div className="hero-text">
               <h1 className="header" style={{ textAlign: 'left' }}>

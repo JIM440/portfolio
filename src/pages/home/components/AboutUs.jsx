@@ -46,7 +46,10 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="image">
-          <img src="" alt="" />
+          <img
+            src="https://cultivatedculture.com/wp-content/uploads/2019/12/LinkedIn-Profile-Picture-Example-Justin-Welsh.jpeg"
+            alt=""
+          />
         </div>
       </div>
     </section>
