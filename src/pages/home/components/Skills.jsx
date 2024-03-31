@@ -18,7 +18,6 @@ const Skills = () => {
                   <li>SASS | SCSS</li>
                   <li>JavaScript</li>
                   <li>React</li>
-                  <li>Web Design</li>
                 </ul>
               </div>
               <div>
@@ -50,8 +49,8 @@ const Skills = () => {
                 <ul>
                   <li>Excel</li>
                   <li>SQL</li>
-                  <li>Power BI</li>
-                  <li>Python | SPSS</li>
+                  <li>Power BI | Tableau</li>
+                  {/* <li>Python | SPSS</li> */}
                 </ul>
               </div>
             </div>
