@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import OpenPdfInNewTab from '../../../common/functions/DownloadDoc';
 import roadmap from '../../../assets/FULL STACK WEB DEVELOPER ROADMAP.pdf';
 import resume from '../../../assets/cv.pdf';
+import jim from '../../../assets/img/jim2.jpg';
 
 const AboutUs = () => {
   return (
@@ -46,10 +47,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="image">
-          <img
-            src="https://cultivatedculture.com/wp-content/uploads/2019/12/LinkedIn-Profile-Picture-Example-Justin-Welsh.jpeg"
-            alt=""
-          />
+          <img src={jim} alt="" />
         </div>
       </div>
     </section>

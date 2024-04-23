@@ -4,7 +4,7 @@ import Services from './components/Services';
 import AboutUs from './components/AboutUs';
 import UseScrollTop from '../../common/components/UseScrollTop';
 import Projects from './components/Projects';
-import jim from '../../assets/img/jim.jpg';
+import jim from '../../assets/img/jim1.jpg';
 
 const Home = () => {
   const scrollToTop = UseScrollTop();
@@ -18,10 +18,7 @@ const Home = () => {
         <div className="container">
           <div className="hero-columns">
             <div className="hero-img">
-              <img
-                src="https://blog.photofeeler.com/wp-content/uploads/2017/12/linkedin-profile-picture.jpg"
-                alt=""
-              />
+              <img src={jim} alt="" />
             </div>
             <div className="hero-text">
               <h1 className="header" style={{ textAlign: 'left' }}>

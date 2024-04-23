@@ -10,6 +10,9 @@
     padding-top: 16px;
     align-items: center;
     justify-content: center;
+    img {
+      max-height: 170px;
+    }
     @media (min-width: 576px) {
       & {
         grid-template-columns: 1fr 1fr;
@@ -53,6 +56,15 @@
 
     p {
       margin-bottom: 10px;
+    }
+  }
+  .image {
+    justify-content: center;
+    img {
+      max-width: 600px;
+      object-fit: cover;
+      vertical-align: middle;
+      max-height: 500px;
     }
   }
 }
