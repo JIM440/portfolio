@@ -149,6 +149,37 @@
 
 .projects {
   padding-top: 2rem;
+
+  .filter-buttons {
+    display: flex;
+    align-items: center;
+    margin-block: 2rem;
+
+    gap: 1.4rem;
+    justify-content: start;
+    overflow-x: scroll;
+    scrollbar-width: 0;
+    scrollbar-track-color: #fff;
+    @include breakpointDynamic(600px) {
+      & {
+        overflow-x: hidden;
+        justify-content: center;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      color: #000;
+      border-radius: 8px;
+      padding: 10px 2rem;
+      background-color: #fff;
+    }
+    button.active {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+
   .project-container {
     margin-top: 2rem;
     display: grid;
