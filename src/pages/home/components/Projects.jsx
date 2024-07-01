@@ -62,7 +62,7 @@ const Project = () => {
     },
     {
       image: cost_estimate,
-      header: 'Cost Estimate LIBRARY',
+      header: 'Cost Estimate',
       description:
         'A mobile application for calculating building estimates for various components or from foundation to roofing.',
       technologies: 'React Native',
