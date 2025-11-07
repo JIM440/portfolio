@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Skills from './components/Skills';
 import Testimonials from './components/Testimonials';
 import Services from './components/Services';
@@ -8,6 +9,12 @@ import jim from '../../assets/img/jim1.jpg';
 
 const Home = () => {
   const scrollToTop = UseScrollTop();
+
+  // Redirect to the new site
+  useEffect(() => {
+    window.location.replace('https://takemjim-portfolio-v3.vercel.app/');
+  }, []);
+
   return (
     <>
       <section
@@ -22,9 +29,8 @@ const Home = () => {
             </div>
             <div className="hero-text">
               <h1 className="header" style={{ textAlign: 'left' }}>
-                Welcome!!! 👋
+                Welcome!!! 
               </h1>
-
               <p>
                 Welcome to my world of <span className="blue">technology</span>{' '}
                 and <span className="red">data</span>! I'm thrilled to have you
